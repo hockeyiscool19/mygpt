@@ -8,7 +8,7 @@ import os
 load_dotenv()
 
 DATABASE_URL = os.getenv("DATABASE_URL")
-CRED = credentials.Certificate("postmanServiceAccount.json")
+CRED = credentials.Certificate("serviceAccount.json")
 firebase_admin.initialize_app(CRED)
 
 
